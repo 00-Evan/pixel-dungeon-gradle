@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath 'com.android.tools.build:gradle:8.9.1'
     }
 }
 
@@ -17,9 +17,10 @@ allprojects {
         appVersionCode = 74
         appVersionName = '1.9.1'
 
-        appAndroidCompileSDK = 33
-        appAndroidMinSDK = 8
-        appAndroidTargetSDK = 33
+        appAndroidCompileSDK = 36   //Android 14
+        appAndroidMinSDK = 8        //Android 2.2
+        //we target SDK 34 as 35+ forces edge-to-edge
+        appAndroidTargetSDK = 34    //Android 14
     }
     version = appVersionName
 
